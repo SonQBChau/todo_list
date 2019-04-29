@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:todo_list/todo_list.dart';
+import 'package:todo_list/todo_list_screen.dart';
 
 void main (){
   SystemChrome.setEnabledSystemUIOverlays([]);
@@ -13,10 +13,7 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: 'Todo List',
-      home: Scaffold(
-        appBar: AppBar(title: Text('Todo List'),),
-        body: TodoList(),
-      ),
+      home: TodoListScreen(),
     );
   }
 
